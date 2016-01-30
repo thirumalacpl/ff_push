@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+<title>Hello World</title>
+
+<!--Stylesheet Files : jQuery Mobile CSS File, Customized CSS File-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+<link rel="stylesheet" href="css/my.css">
+
+<!--AJAX Library, jQuery File : Library, Mobile Library,Cordova JS, Push Notification JS and Customized JS File -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="push.js"></script>
+<script type="text/javascript" src="js/my.js"></script>
+</head>
+
+<!--Beginning of the Body-->
+<body>
+<div data-role="page">
+<div data-role="header" data-position="fixed" class="ui-header ui-bar-a ui-header-fixed slidedown" role="banner">
+<h1>Push Me</h1>
+</div>
+<div data-role="main" class="ui-content" id="main">
+
+<!--Form containing fields registration ID, name, email ID and a submit button -->
+<form>
+<ul data-role="listview" data-inset="true">
+<li class="ui-field-contain">
+<label for="name2">Your Registration ID is:</label>
+<input type="text" id="regid" value="" data-clear-btn="true" disabled>
+</li>
+<li class="ui-field-contain">
+<label for="name2">Enter Your Name:</label>
+<input type="text" id="name" value="" data-clear-btn="true">
+</li>
+<li class="ui-field-contain">
+<label for="name2">Enter Your Email ID:</label>
+<input type="text" id="email" value="" data-clear-btn="true">
+</li>
+<li class="ui-body ui-body-b">
+<center><a href="#" id="submit" class="ui-shadow ui-btn ui-corner-all">Submit</a></center>
+</li>
+</ul>
+</form>
+</div>
+</div>
+</body>
+<!--End of the body-->
+</html>
